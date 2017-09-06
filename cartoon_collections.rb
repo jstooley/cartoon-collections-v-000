@@ -1,7 +1,7 @@
 def roll_call_dwarves(array)# code an argument here
   # Your code here
   array.each_with_index do |name, i|
-    puts "#{array[i]}"
+    puts "#{i+1}.#{array[i]}"
   end
 end
 
