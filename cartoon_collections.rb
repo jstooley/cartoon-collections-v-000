@@ -16,11 +16,9 @@ end
 
 def long_planeteer_calls(array)# code an argument here
   # Your code here
-  longer = false
-  array.collect do |word|
-    if word.length <  4
-       longer = true
-    end
+  bool_arrray = []
+  array.each_with_index do |word, i|
+    bool_array[i] = word < 4
   end
   longer
 end
