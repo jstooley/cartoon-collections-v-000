@@ -23,10 +23,12 @@ end
 
 def find_the_cheese(array)# code an argument here
   # the array below is here to help
-  array.collect do |food|
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.detect do |i|
-    i == food
+  array.detect do |item|
+    cheese_types.detect do |cheese|
+      item == cheese
+    end
+    
   end
-  end
+  
 end
